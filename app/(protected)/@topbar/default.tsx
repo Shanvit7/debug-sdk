@@ -16,7 +16,7 @@ import LogoutDialog from "@/components/custom/dialog/logout";
 import logo from "@/public/qie.png";
 import { User, ChevronDown } from "lucide-react";
 
-const TopBar = () => {
+export default function TopBar() {
   const { data: { data: { email = '...' } = {} } = {} } = useSWR("/user", getUserProfile);
   return (
     <nav className="flex items-center justify-between p-4">
@@ -35,6 +35,4 @@ const TopBar = () => {
       </DropdownMenu>
     </nav>
   );
-};
-
-export default TopBar;
+}

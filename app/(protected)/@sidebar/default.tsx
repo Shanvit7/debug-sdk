@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 // ASSETS
 import { KeyRound, FileCode } from "lucide-react";
 
-const Sidebar = () => {
+export default function Sidebar (){
   const pathname = usePathname();
 
   const sections = [
@@ -51,5 +51,3 @@ const Sidebar = () => {
     </div>
   );
 };
-
-export default Sidebar;
