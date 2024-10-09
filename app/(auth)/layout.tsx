@@ -1,15 +1,15 @@
 import { ReactNode } from "react";
 
 const AuthLayout = ({
-  openTopbar,
+ topbar,
   forms,
 }: {
-  openTopbar: ReactNode;
+  topbar: ReactNode;
   forms: ReactNode;
 }) => {
   return (
     <main className="min-h-dvh w-dvw overflow-x-hidden grid grid-rows-[auto_1fr]">
-      <section>{openTopbar}</section>
+      <section>{topbar}</section>
       <section className="grid place-items-center">{forms}</section>
     </main>
   );
